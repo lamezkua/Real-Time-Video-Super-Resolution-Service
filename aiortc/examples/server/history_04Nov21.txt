@@ -1,0 +1,1000 @@
+ 1033  cd Git/
+ 1034  ls
+ 1035  cd VideoProcessingFramework/
+ 1036  ls
+ 1037  cd install/bin/
+ 1038  ls
+ 1039  conda env list
+ 1040  conda activate vpf2
+ 1041  which ffmpeg
+ 1042  history
+ 1043  export PATH=/home/gpuadmin/anaconda3/envs/vpf2/bin:/home/gpuadmin/Git/FFmpeg/build_x64_release_shared/bin:/home/gpuadmin/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ 1044  which ffmpeg
+ 1045  export PATH_TO_FFMPEG=~/Git/FFmpeg/build_x64_release_shared
+ 1046  cd ~/Git/VideoProcessingFramework/install/bin
+ 1047  export LD_LIBRARY_PATH=$PATH_TO_FFMPEG/lib:$LD_LIBRARY_PATH
+ 1048  export LD_LIBRARY_PATH=$(pwd):$LD_LIBRARY_PATH
+ 1049  echo $LD_LIBRARY_PATH
+ 1050  ls
+ 1051  nano example_vpf.py
+ 1052  pwd
+ 1053  ls
+ 1054  which fmprobe
+ 1055  which ffmpeg
+ 1056  ls /home/gpuadmin/Git/FFmpeg/build_x64_release_shared/bin/
+ 1057  which ffprobe
+ 1058  ffprobe big_buck_bunny_1080p_h264.mp4
+ 1059  ls
+ 1060  python example_vpf.py
+ 1061  nano example_vpf.py
+ 1062  python example_vpf.py
+ 1063  nano example_vpf.py
+ 1064  python example_vpf.py
+ 1065  nano example_vpf.py
+ 1066  python example_vpf.py
+ 1067  ls
+ 1068  ls -la
+ 1069  rm big_buck_bunny_1080p.h264
+ 1070  ls
+ 1071  python SampleDecode.py big_buck_bunny_1080p_h264.mp4 big_buck_bunny_1080p_h264_out.mp4
+ 1072  python SampleDecode.py 0 big_buck_bunny_1080p_h264.mp4 big_buck_bunny_1080p_h264_out.mp4
+ 1073  ls -la
+ 1074  ffprobe big_buck_bunny_1080p_h264_out.mp4
+ 1075  SampleEncode.py
+ 1076  python SampleEncode.py
+ 1077  ffprobe big_buck_bunny_1080p_h264.mp4
+ 1078  python SampleEncode.py 0 big_buck_bunny_1080p_h264_out.mp4 960 540
+ 1079  python SampleEncode.py 0 big_buck_bunny_1080p_h264_out.mp4 big_buck_bunny_1080p_h264_out2.mp4  960 540
+ 1080  ls -la
+ 1081  ffprobe big_buck_bunny_1080p_h264_out2.mp4
+ 1082  history
+ 1083  ffprobe -probesize 42M  big_buck_bunny_1080p_h264_out2.mp4
+ 1084  echo $PATH
+ 1085  echo $PATH_TO_FFMPEG
+ 1086  echo $LD_LIBRARY_PATH
+ 1087  logout
+ 1088  pwd
+ 1089  ls
+ 1090  cd ESPCN-PyTorch/
+ 1091  ls
+ 1092  cat test_video_cpu3.py
+ 1093  fmpeg -encoders
+ 1094  ffmpeg -encoders
+ 1095  ls
+ 1096  nano test_video_cpu3.py
+ 1097  conda env list
+ 1098  conda activate espcn_gpu
+ 1099  ls
+ 1100  history | grep test_video_cpu3.py
+ 1101  python test_video_cpu3.py --file ./data/file_example_MP4_480_1_5MG.mp4 --scale-factor 4 --weights ./weights/espcn_4x.pth --cuda
+ 1102  ffmpeg -encoders| grep h264
+ 1103  ffmpeg -encoders| grep 264
+ 1104  ffmpeg -encoders| grep *264*
+ 1105  ffmpeg -encoders| grep '*264*'
+ 1106  ffmpeg -encoders| more
+ 1107  ffmpeg -encoders
+ 1108  which ffmpeg
+ 1109  ffmpeg --version
+ 1110  ffmpeg -version
+ 1111  conda deactivate
+ 1112  conda env list
+ 1113  conda activate espcn_cpu
+ 1114  ffmpeg -encoders
+ 1115  python test_video_cpu3.py --file ./data/file_example_MP4_480_1_5MG.mp4 --scale-factor 4 --weights ./weights/espcn_4x.pth --cuda
+ 1116  ls -la
+ 1117  pwd
+ 1118  nano test_video_cpu3.py
+ 1119  which fprobe
+ 1120  which ffprobe
+ 1121  ls data
+ 1122  ffprobe data/file_example_MP4_480_1_5MG.mp4
+ 1123  ls
+ 1124  ls -la
+ 1125  ffprobe espcn_4x_file_example_MP4_480_1_5MG.mp4
+ 1126  ls
+ 1127  more test_video_cpu3.py
+ 1128  python test_video_cpu3.py --file ./data/file_example_MP4_480_1_5MG.mp4 --scale-factor 4 --weights ./weights/espcn_4x.pth --cuda
+ 1129  ls -la
+ 1130  pwd
+ 1131  cd ~
+ 1132  ls
+ 1133  ls -la
+ 1134  nano .profile
+ 1135  cat .profile
+ 1136  ls
+ 1137  cd Git/
+ 1138  ls
+ 1139  cd VideoProcessingFramework/
+ 1140  cd install/bin/
+ 1141  ls
+ 1142  history
+ 1143  export PATH=/home/gpuadmin/anaconda3/envs/vpf2/bin:/home/gpuadmin/Git/FFmpeg/build_x64_release_shared/bin:/home/gpuadmin/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ 1144  export PATH_TO_FFMPEG=~/Git/FFmpeg/build_x64_release_shared
+ 1145  cd ~/Git/VideoProcessingFramework/install/bin
+ 1146  export LD_LIBRARY_PATH=$PATH_TO_FFMPEG/lib:$LD_LIBRARY_PATH
+ 1147  export LD_LIBRARY_PATH=$(pwd):$LD_LIBRARY_PATH
+ 1148  ls
+ 1149  ls -la
+ 1150  ls
+ 1151  conda env list
+ 1152  conda activate vpf2
+ 1153  which ffmpeg
+ 1154  ls
+ 1155  ls data
+ 1156  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG.mp4 file_example_MP4_480_1_5MG_out.h264
+ 1157  ls -la
+ 1158  which ffprobe
+ 1159  ffprobe file_example_MP4_480_1_5MG_out.h264
+ 1160  history | grep ffprobe
+ 1161  ffprobe -probesize 42M file_example_MP4_480_1_5MG_out.h264
+ 1162  ls -la
+ 1163  pwd
+ 1164  rm file_example_MP4_480_1_5MG_out.mkv
+ 1165  rm file_example_MP4_480_1_5MG_out.mp4
+ 1166  history
+ 1167  ls -la
+ 1168  pwd
+ 1169  rm big_buck_bunny_1080p_h264_out2.mp4
+ 1170  ls -la
+ 1171  more test_video_onlygpu.txt
+ 1172  ls
+ 1173  ls -la
+ 1174  rm test_video_onlygpu.txt
+ 1175  ls -la
+ 1176  history
+ 1177  ls /sbin
+ 1178  history
+ 1179  ls
+ 1180  pwd
+ 1181  cd ~
+ 1182  ls
+ 1183  cd ESPCN-PyTorch/
+ 1184  ls
+ 1185  ls -la
+ 1186  rm espcn_4x_file_example_MP4_480_1_5MG.mp4
+ 1187  rm espcn_4x_v_BaseballPitch_g06_c03.mp4
+ 1188  ls -la
+ 1189  more test_video_cpu3.py
+ 1190  ls
+ 1191  cp test_video_cpu3.py test_video_cpu4.py
+ 1192  nano test_video_cpu4.py
+ 1193  more test_video_cpu4.py
+ 1194  conda env list
+ 1195  conda activate espcn_cpu
+ 1196  history
+ 1197  ls -la
+ 1198  python test_video_cpu4.py --file ./data/file_example_MP4_480_1_5MG.mp4 --scale-factor 4 --weights ./weights/espcn_4x.pth --cuda
+ 1199  conda env list
+ 1200  history
+ 1201  ffmpeg -encoders
+ 1202  ls
+ 1203  more test_video_cpu4.py
+ 1204  ffmpeg -encoders | grep 264
+ 1205  more ~/.profile
+ 1206  which ffmpeg
+ 1207  nano ~/.profile
+ 1208  source ~/.profile
+ 1209  conda activate espcn_cpu
+ 1210  which ffmpeg
+ 1211  logout
+ 1212  conda activate espcn_cpu
+ 1213  which ffmpeg
+ 1214  history
+ 1215  ffmpeg -encoders
+ 1216  ffmpeg -encoders| grep h264
+ 1217  printenv
+ 1218  nano ~/.profile
+ 1219  echo $PATH
+ 1220  nano ~/.profile
+ 1221  logout
+ 1222  history
+ 1223  ls
+ 1224  nano test_video_onlygpu.py
+ 1225  conda env list
+ 1226  conda activate vpf2
+ 1227  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG.mp4 file_example_MP4_480_1_5MG_out.h264
+ 1228  ls
+ 1229  more test_video_onlygpu.py
+ 1230  nano load_vpf_env_variables.sh
+ 1231  ls
+ 1232  nano load_vpf_env_variables.sh
+ 1233  pwd
+ 1234  ls
+ 1235  mv load_vpf_env_variables.sh $HOME
+ 1236  ls $HOME
+ 1237  ls
+ 1238  ls -la
+ 1239  pwd
+ 1240  ls
+ 1241  cd ESPCN-PyTorch/
+ 1242  ls
+ 1243  more test_video_cpu4.py
+ 1244  ls
+ 1245  . ~/load_vpf_env_variables.sh
+ 1246  ls
+ 1247  ls -la
+ 1248  history
+ 1249  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG.mp4 file_example_MP4_480_1_5MG_out.h264
+ 1250  conda activate vpf2
+ 1251  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG.mp4 file_example_MP4_480_1_5MG_out.h264
+ 1252  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG.mp4 file_example_MP4_480_1_5MG_out.h264 4
+ 1253  ls
+ 1254  more test_video_onlygpu.py
+ 1255  ls
+ 1256  nvidia-smi -l 1
+ 1257  ls
+ 1258  cd ESPCN-PyTorch/
+ 1259  ls
+ 1260  more test_video_cpu4.py
+ 1261  ls
+ 1262  nano test_video_cpu4.py
+ 1263  ls -la
+ 1264  nano test_video_cpu4.py
+ 1265  conda activate espcn_gpu
+ 1266  which ffmpeg
+ 1267  history | grep cpu4
+ 1268  python test_video_cpu4.py --file ./data/file_example_MP4_480_1_5MG.mp4 --scale-factor 4 --weights ./weights/espcn_4x.pth --cuda
+ 1269  nano test_video_cpu4.py
+ 1270  python test_video_cpu4.py --file ./data/file_example_MP4_480_1_5MG.mp4 --scale-factor 4 --weights ./weights/espcn_4x.pth --cuda
+ 1271  ls -la
+ 1272  pwd
+ 1273  python test_video_cpu4.py --file ./data/file_example_MP4_480_1_5MG.mp4 --scale-factor 4 --weights ./weights/espcn_4x.pth --cuda
+ 1274  nano test_video_cpu4.py
+ 1275  python test_video_cpu4.py --file ./data/file_example_MP4_480_1_5MG.mp4 --scale-factor 4 --weights ./weights/espcn_4x.pth --cuda
+ 1276  ls -la
+ 1277  pwd
+ 1278  mv test.h264 test.h264.old
+ 1279  nano test_video_cpu4.py
+ 1280  python test_video_cpu4.py --file ./data/file_example_MP4_480_1_5MG.mp4 --scale-factor 4 --weights ./weights/espcn_4x.pth --cuda
+ 1281  nano test_video_cpu4.py
+ 1282  ls
+ 1283  cp test_video_cpu4.py test_video_cpu5.py
+ 1284  nano test_video_cpu5.py
+ 1285  ls -la
+ 1286  python test_video_cpu4.py --file ./data/file_example_MP4_480_1_5MG.mp4 --scale-factor 4 --weights ./weights/espcn_4x.pth --cuda
+ 1287  nano test_video_cpu5.py
+ 1288  ls -la
+ 1289  python test_video_cpu4.py --file ./data/file_example_MP4_480_1_5MG.mp4 --scale-factor 4 --weights ./weights/espcn_4x.pth --cuda
+ 1290  ls -la
+ 1291  rm test.h264.old
+ 1292  nano test_video_cpu5.py
+ 1293  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG.mp4 --scale-factor 4 --weights ./weights/espcn_4x.pth --cuda
+ 1294  ls -la
+ 1295  nano test_video_cpu5.py
+ 1296  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG.mp4 --scale-factor 4 --weights ./weights/espcn_4x.pth --cuda
+ 1297  ls -la
+ 1298  rm test.h264
+ 1299  rm test.mkv
+ 1300  rm espcn_4x_file_example_MP4_480_1_5MG.mp4
+ 1301  ls -la
+ 1302  ls
+ 1303  cd ESPCN-PyTorch/
+ 1304  ls
+ 1305  nano test_video_cpu5.py
+ 1306  ls -la
+ 1307  top
+ 1308  ls -la
+ 1309  nvidia-smia -l 1
+ 1310  nvidia-smi -l 1
+ 1311  conda activate gpu
+ 1312  which gpu
+ 1313  conda activate espcn_gpu
+ 1314  which ffmpeg
+ 1315  ls -la
+ 1316  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG.mp4 --scale-factor 4 --weights ./weights/espcn_4x.pth --cuda
+ 1317  ls -la
+ 1318  pwd
+ 1319  conda deactivate
+ 1320  conda activate espcn_cpu
+ 1321  which ffmpeg
+ 1322  nano test_video_cpu5.py
+ 1323  ls -la
+ 1324  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG.mp4 --scale-factor 4 --weights ./weights/espcn_4x.pth --cuda
+ 1325  ls -la
+ 1326  pwd
+ 1327  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG.mp4 --scale-factor 4 --weights ./weights/espcn_4x.pth --cuda
+ 1328  ls -la
+ 1329  ls
+ 1330  . ~/load_vpf_env_variables.sh
+ 1331  conda activate vpf2
+ 1332  ls
+ 1333  history | grep 'test_video_onlygpu.py'
+ 1334  ls
+ 1335  more test_video_onlygpu.py
+ 1336  history | grep 'test_video_onlygpu.py'
+ 1337  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG.mp4 file_example_MP4_480_1_5MG_out.h264 2
+ 1338  conda deactivate
+ 1339  conda activate vpf2
+ 1340  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG.mp4 file_example_MP4_480_1_5MG_out.h264 3
+ 1341  conda deactivate
+ 1342  conda activate vpf2
+ 1343  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG.mp4 file_example_MP4_480_1_5MG_out.h264 4
+ 1344  conda deactivate
+ 1345  conda activate vpf2
+ 1346  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG.mp4 file_example_MP4_480_1_5MG_out.h264 8
+ 1347  ls -la
+ 1348  pwd
+ 1349  more test_video_onlygpu.py
+ 1350  conda deactivate
+ 1351  ls -la
+ 1352  cd ESPCN-PyTorch/
+ 1353  ls
+ 1354  history
+ 1355  cd ..
+ 1356  ls -la
+ 1357  . ~/load_vpf_env_variables.sh
+ 1358  ls
+ 1359  conda env list
+ 1360  conda activate vpf2
+ 1361  which fprobe
+ 1362  which ffprobe
+ 1363  ls -la
+ 1364  ls -la ./data
+ 1365  ffprobe -i ./data/file_example_MP4_480_1_5MG.mp4
+ 1366  ffmpeg --help
+ 1367  man ffmpeg
+ 1368  ffprobe -i ./data/file_example_MP4_480_1_5MG.mp4
+ 1369  ffmpeg -i ./data/file_example_MP4_480_1_5MG.mp4 -vf scale=960x540:flags=bicubic -c:v h264_nvenc -preset slow -crf 21 ./data/file_example_MP4_480_1_5MG_upscaled.h264
+ 1370  ffmpeg -i ./data/file_example_MP4_480_1_5MG.mp4 -vf scale=960x540:flags=bicubic -c:v h264_nvenc -crf 21 ./data/file_example_MP4_480_1_5MG_upscaled.h264
+ 1371  ffmpeg -i ./data/file_example_MP4_480_1_5MG.mp4 -vf scale=960x540:flags=bicubic -c:v h264_nvenc ./data/file_example_MP4_480_1_5MG_upscaled.h264
+ 1372  ffmpeg -encoders | grep 'h264'
+ 1373  ffmpeg -encoders | grep 'nv'
+ 1374  ffmpeg -encoders | grep 'nvc'
+ 1375  ffmpeg -encoders | grep 'vc'
+ 1376  ffmpeg -encoder
+ 1377  ffmpeg -encoders
+ 1378  conda deactivate
+ 1379  conda activate espcn_cpu
+ 1380  ffmpeg -i ./data/file_example_MP4_480_1_5MG.mp4 -vf scale=960x540:flags=bicubic -c:v libx264 ./data/file_example_MP4_480_1_5MG_upscaled.h264
+ 1381  ls -la ./data
+ 1382  ls
+ 1383  cd ESPCN-PyTorch/
+ 1384  ls
+ 1385  more test_video_cpu5.py
+ 1386  cd..
+ 1387  cd ..
+ 1388  ls
+ 1389  cd Git/
+ 1390  ls
+ 1391  cd VideoProcessingFramework/
+ 1392  cd install/bin/
+ 1393  ls
+ 1394  more test_video_onlygpu.py
+ 1395  ls
+ 1396  ls data
+ 1397  ls ./data
+ 1398  cd ~
+ 1399  ls
+ 1400  cd ESPCN-PyTorch/
+ 1401  ls
+ 1402  ls data
+ 1403  conda activate espcn_cpu
+ 1404  ffmpeg -i ./data/file_example_MP4_480_1_5MG.mp4 -vf scale=960x540:flags=bicubic -c:v libx264 ./data/file_example_MP4_480_1_5MG_upscaled.h264
+ 1405  ls data
+ 1406  ls -la ./data
+ 1407  ffprobe -i ./data/file_example_MP4_480_1_5MG_upscaled.h264
+ 1408  pwd
+ 1409  ls -la
+ 1410  ls -la ./data
+ 1411  ffmpeg -i ./data/file_example_MP4_480_1_5MG.mp4 -vf scale=224x126:flags=bicubic -c:v libx264 ./data/file_example_MP4_480_1_5MG_downscaled.h264
+ 1412  ls -la ./data
+ 1413  ffprobe -i ./data/file_example_MP4_480_1_5MG_downscaled.h264
+ 1414  ls -la ./data
+ 1415  ls
+ 1416  cd ESPCN-PyTorch/
+ 1417  ls
+ 1418  conda activate espcn_cpu
+ 1419  nano test_video_cpu5.py
+ 1420  history | grep cpu5
+ 1421  ls data
+ 1422  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_upscaled.h264 --scale-factor 2 --weights ./weights/espcn_2x.pth --cuda
+ 1423  nano test_video_cpu5.py
+ 1424  conda deactivate
+ 1425  conda activate espcn_gpu
+ 1426  ls -la
+ 1427  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_upscaled.h264 --scale-factor 2 --weights ./weights/espcn_2x.pth --cuda
+ 1428  pwd
+ 1429  ls -la ./data
+ 1430  conda deactivate
+ 1431  conda activate espcn_cpu
+ 1432  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_upscaled.h264 --scale-factor 3 --weights ./weights/espcn_3x.pth --cuda
+ 1433  conda deactivate
+ 1434  conda activate espcn_gpu
+ 1435  nano test_video_cpu5.py
+ 1436  conda deactivate
+ 1437  conda activate espcn_cpu
+ 1438  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_upscaled.h264 --scale-factor 3 --weights ./weights/espcn_3x.pth --cuda
+ 1439  conda deactivate
+ 1440  conda activate espcn_gpu
+ 1441  nano test_video_cpu5.py
+ 1442  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_upscaled.h264 --scale-factor 3 --weights ./weights/espcn_3x.pth --cuda
+ 1443  conda deactivate
+ 1444  conda activate espcn_cpu
+ 1445  nano test_video_cpu5.py
+ 1446  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_upscaled.h264 --scale-factor 2 --weights ./weights/espcn_2x.pth --cuda
+ 1447  conda deactivate
+ 1448  conda activate espcn_gpu
+ 1449  nano test_video_cpu5.py
+ 1450  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_upscaled.h264 --scale-factor 2 --weights ./weights/espcn_2x.pth --cuda
+ 1451  conde deactivate
+ 1452  conda deactivate
+ 1453  conda activate espcn_cpu
+ 1454  nano test_video_cpu5.py
+ 1455  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_upscaled.h264 --scale-factor 3 --weights ./weights/espcn_3x.pth --cuda
+ 1456  conda deactivate
+ 1457  conda activate espcn_gpu
+ 1458  nano test_video_cpu5.py
+ 1459  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_upscaled.h264 --scale-factor 3 --weights ./weights/espcn_3x.pth --cuda
+ 1460  conda deactivate
+ 1461  conda activate espcn_cpu
+ 1462  nano test_video_cpu5.py
+ 1463  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_upscaled.h264 --scale-factor 4 --weights ./weights/espcn_4x.pth --cuda
+ 1464  conda deactivate
+ 1465  conda activate espcn_gpu
+ 1466  nano test_video_cpu5.py
+ 1467  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_upscaled.h264 --scale-factor 4 --weights ./weights/espcn_4x.pth --cuda
+ 1468  conda deactivate
+ 1469  conda activate espcn_cpu
+ 1470  nano test_video_cpu5.py
+ 1471  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_upscaled.h264 --scale-factor 8 --weights ./weights/espcn_8x.pth --cuda
+ 1472  conda deactivate
+ 1473  conda activate espcn_gpu
+ 1474  nano test_video_cpu5.py
+ 1475  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_upscaled.h264 --scale-factor 8 --weights ./weights/espcn_8x.pth --cuda
+ 1476  ls -la
+ 1477  conda deactivate
+ 1478  conda activate espcn_gpu
+ 1479  nano test_video_cpu5.py
+ 1480  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_upscaled.h264 --scale-factor 8 --weights ./weights/espcn_8x.pth --cuda
+ 1481  ffmpeg -encoders
+ 1482  nano test_video_cpu5.py
+ 1483  logout
+ 1484  ls
+ 1485  cd ESPCN-PyTorch/
+ 1486  ls
+ 1487  ls -la
+ 1488  ls data
+ 1489  ls -la ./data
+ 1490  conda activate espcn_gpu
+ 1491  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_upscaled.h264 --scale-factor 8 --weights ./weights/espcn_8x.pth --cuda
+ 1492  ls ./weights
+ 1493  nano test_video_cpu5.py
+ 1494  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_upscaled.h264 --scale-factor 4 --weights ./weights/espcn_4x.pth --cuda
+ 1495  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_upscaled.h264 --scale-factor 8 --weights ./weights/espcn_8x.pth --cuda
+ 1496  ls ./data
+ 1497  ffprobe -i ./data/file_example_MP4_480_1_5MG.mp4
+ 1498  ffprobe -i ./data/file_example_MP4_480_1_5MG_upscaled.mp4
+ 1499  ffprobe -i ./data/file_example_MP4_480_1_5MG_upscaled.h264
+ 1500  ffmpeg -i ./data/file_example_MP4_480_1_5MG.mp4 -vf scale=960x540:flags=bicubic -c:v h264_nvenc ./data/file_example_MP4_480_1_5MG_upscaled.h264
+ 1501  ffmpeg -i ./data/file_example_MP4_480_1_5MG.mp4 -vf scale=640x360:flags=bicubic -c:v libx264 ./data/file_example_MP4_480_1_5MG_upscaled.h264
+ 1502  conda deactivate
+ 1503  conda activate espcn_cpu
+ 1504  ffmpeg -i ./data/file_example_MP4_480_1_5MG.mp4 -vf scale=640x360:flags=bicubic -c:v libx264 ./data/file_example_MP4_480_1_5MG_upscaled.h264
+ 1505  ls -la ./data
+ 1506  ffprobe -i ./data/file_example_MP4_480_1_5MG_upscaled.h264
+ 1507  conda deactivate
+ 1508  conda activate espcn_gpu
+ 1509  nano test_video_cpu5.py
+ 1510  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_upscaled.h264 --scale-factor 8 --weights ./weights/espcn_8x.pth --cuda
+ 1511  pwd
+ 1512  ls -la ./data
+ 1513  conda deactivate
+ 1514  conda activate espcn_cpu
+ 1515  ffmpeg -i ./data/file_example_MP4_480_1_5MG.mp4 -vf scale=608x342:flags=bicubic -c:v libx264 ./data/file_example_MP4_480_1_5MG_upscaled.h264
+ 1516  ffprobe -i ./data/file_example_MP4_480_1_5MG_upscaled.h264
+ 1517  conda deactivate
+ 1518  conda activate espcn_gpu
+ 1519  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_upscaled.h264 --scale-factor 8 --weights ./weights/espcn_8x.pth --cuda
+ 1520  conda deactivate
+ 1521  conda activate espcn_cpu
+ 1522  ffmpeg -i ./data/file_example_MP4_480_1_5MG.mp4 -vf scale=576x324:flags=bicubic -c:v libx264 ./data/file_example_MP4_480_1_5MG_upscaled.h264
+ 1523  ffprobe -i ./data/file_example_MP4_480_1_5MG_upscaled.h264
+ 1524  conda deactivate
+ 1525  conda activate espcn_gpu
+ 1526  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_upscaled.h264 --scale-factor 8 --weights ./weights/espcn_8x.pth --cuda
+ 1527  conda deactivate
+ 1528  conda activate espcn_cpu
+ 1529  ffmpeg -i ./data/file_example_MP4_480_1_5MG.mp4 -vf scale=512x288:flags=bicubic -c:v libx264 ./data/file_example_MP4_480_1_5MG_upscaled.h264
+ 1530  conda deactivate
+ 1531  conda activate gpu
+ 1532  conda activate espcn_gpu
+ 1533  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_upscaled.h264 --scale-factor 8 --weights ./weights/espcn_8x.pth --cuda
+ 1534  ffprobe -i ./data/file_example_MP4_480_1_5MG_upscaled.h264
+ 1535  ffprobe -i ./data/file_example_MP4_480_1_5MG.mp4
+ 1536  ffprobe -i ./data/file_example_MP4_480_1_5MG_downscaled.h264
+ 1537  conda deactivate
+ 1538  conda activate espcn_cpu
+ 1539  nano test_video_cpu5.py
+ 1540  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_upscaled.h264 --scale-factor 2 --weights ./weights/espcn_2x.pth --cuda
+ 1541  conda deactivate
+ 1542  conda activate espcn_gpu
+ 1543  nano test_video_cpu5.py
+ 1544  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_upscaled.h264 --scale-factor 2 --weights ./weights/espcn_2x.pth --cuda
+ 1545  conda deactivate
+ 1546  conda activate espcn_cpu
+ 1547  nano test_video_cpu5.py
+ 1548  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_upscaled.h264 --scale-factor 3 --weights ./weights/espcn_3x.pth --cuda
+ 1549  conda deactivate
+ 1550  conda activate espcn_gpu
+ 1551  nano test_video_cpu5.py
+ 1552  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_upscaled.h264 --scale-factor 3 --weights ./weights/espcn_3x.pth --cuda
+ 1553  conda deactivate
+ 1554  conda activate espcn_cpu
+ 1555  nano test_video_cpu5.py
+ 1556  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_upscaled.h264 --scale-factor 4 --weights ./weights/espcn_4x.pth --cuda
+ 1557  conda deactivate
+ 1558  conda activate espcn_gpu
+ 1559  nano test_video_cpu5.py
+ 1560  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_upscaled.h264 --scale-factor 4 --weights ./weights/espcn_4x.pth --cuda
+ 1561  conda deactivate
+ 1562  conda activate espcn_cpu
+ 1563  nano test_video_cpu5.py
+ 1564  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_upscaled.h264 --scale-factor 8 --weights ./weights/espcn_8x.pth --cuda
+ 1565  conda deactivate
+ 1566  conda activate espcn_gpu
+ 1567  nano test_video_cpu5.py
+ 1568  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_upscaled.h264 --scale-factor 8 --weights ./weights/espcn_8x.pth --cuda
+ 1569  conda deactivate
+ 1570  conda activate espcn_cpu
+ 1571  nano test_video_cpu5.py
+ 1572  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_downscaled.h264 --scale-factor 2 --weights ./weights/espcn_2x.pth --cuda
+ 1573  conda deactivate
+ 1574  conda activate espcn_gpu
+ 1575  nano test_video_cpu5.py
+ 1576  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_downscaled.h264 --scale-factor 2 --weights ./weights/espcn_2x.pth --cuda
+ 1577  conda deactivate
+ 1578  conda activate espcn_cpu
+ 1579  nano test_video_cpu5.py
+ 1580  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_downscaled.h264 --scale-factor 3 --weights ./weights/espcn_3x.pth --cuda
+ 1581  conda deactivate
+ 1582  conda activate espcn_gpu
+ 1583  nano test_video_cpu5.py
+ 1584  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_downscaled.h264 --scale-factor 3 --weights ./weights/espcn_3x.pth --cuda
+ 1585  conda deactivate
+ 1586  conda activate espcn_cpu
+ 1587  nano test_video_cpu5.py
+ 1588  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_downscaled.h264 --scale-factor 4 --weights ./weights/espcn_4x.pth --cuda
+ 1589  conda deactivate
+ 1590  conda activate espcn_gpu
+ 1591  nano test_video_cpu5.py
+ 1592  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_downscaled.h264 --scale-factor 4 --weights ./weights/espcn_4x.pth --cuda
+ 1593  conda deactivate
+ 1594  conda activate espcn_cpu
+ 1595  nano test_video_cpu5.py
+ 1596  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_downscaled.h264 --scale-factor 8 --weights ./weights/espcn_8x.pth --cuda
+ 1597  conda deactivate
+ 1598  conda activate espcn_gpu
+ 1599  nano test_video_cpu5.py
+ 1600  python test_video_cpu5.py --file ./data/file_example_MP4_480_1_5MG_downscaled.h264 --scale-factor 8 --weights ./weights/espcn_8x.pth --cuda
+ 1601  ls
+ 1602  . ~/load_vpf_env_variables.sh
+ 1603  ls
+ 1604  conda activate vpf2
+ 1605  which ffmpeg
+ 1606  ls data
+ 1607  cp /home/gpuadmin/ESPCN-PyTorch/data/file_example_MP4_480_1_5MG_upscaled.h264 ./data
+ 1608  cp /home/gpuadmin/ESPCN-PyTorch/data/file_example_MP4_480_1_5MG_downscaled.h264 ./data
+ 1609  ls ./data
+ 1610  ls -la
+ 1611  history | grep onlygpu
+ 1612  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG_upscaled.h264 file_example_MP4_480_1_5MG_upscaled_out.h264 2
+ 1613  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG_upscaled.h264 file_example_MP4_480_1_5MG_upscaled_out.h264 3
+ 1614  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG_upscaled.h264 file_example_MP4_480_1_5MG_upscaled_out.h264 2
+ 1615  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG_upscaled.h264 file_example_MP4_480_1_5MG_upscaled_out.h264 3
+ 1616  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG_upscaled.h264 file_example_MP4_480_1_5MG_upscaled_out.h264 4
+ 1617  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG_upscaled.h264 file_example_MP4_480_1_5MG_upscaled_out.h264 8
+ 1618  cp /home/gpuadmin/ESPCN-PyTorch/data/file_example_MP4_480_1_5MG_upscaled.h264 ./data
+ 1619  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG_upscaled.h264 file_example_MP4_480_1_5MG_upscaled_out.h264 8
+ 1620  cp /home/gpuadmin/ESPCN-PyTorch/data/file_example_MP4_480_1_5MG_upscaled.h264 ./data
+ 1621  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG_upscaled.h264 file_example_MP4_480_1_5MG_upscaled_out.h264 8
+ 1622  cp /home/gpuadmin/ESPCN-PyTorch/data/file_example_MP4_480_1_5MG_upscaled.h264 ./data
+ 1623  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG_upscaled.h264 file_example_MP4_480_1_5MG_upscaled_out.h264 8
+ 1624  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG_upscaled.h264 file_example_MP4_480_1_5MG_upscaled_out.h264 2
+ 1625  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG_upscaled.h264 file_example_MP4_480_1_5MG_upscaled_out.h264 3
+ 1626  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG_upscaled.h264 file_example_MP4_480_1_5MG_upscaled_out.h264 4
+ 1627  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG_upscaled.h264 file_example_MP4_480_1_5MG_upscaled_out.h264 8
+ 1628  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG_downscaled.h264 file_example_MP4_480_1_5MG_downscaled_out.h264 2
+ 1629  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG_downscaled.h264 file_example_MP4_480_1_5MG_downscaled_out.h264 3
+ 1630  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG_downscaled.h264 file_example_MP4_480_1_5MG_downscaled_out.h264 4
+ 1631  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG_downscaled.h264 file_example_MP4_480_1_5MG_downscaled_out.h264 8
+ 1632  ls
+ 1633  cd aiortc
+ 1634  ls
+ 1635  cd examples/server/
+ 1636  ls
+ 1637  ls -la
+ 1638  history|grep 'server_espcn_gpu'
+ 1639  history|grep 'server_espcn_gpu.py'
+ 1640  history|grep 'python server_espcn_gpu.py'
+ 1641  history|grep python server_espcn_gpu.py
+ 1642  history|more
+ 1643  history
+ 1644  ls -la
+ 1645  cat VM_commands_history_26Jul21.txt | grep 'server_espcn_gpu.py'
+ 1646  conda env list
+ 1647  conda activate aiortc2
+ 1648  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1649  ls -la
+ 1650  conda env list
+ 1651  nano server_espcn_gpu.py
+ 1652  cp server_espcn_gpu.py server_espcn_gpu_vpf.py
+ 1653  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1654  conda env list
+ 1655  ls -la
+ 1656  nano server_espcn_gpu_vpf.py
+ 1657  history|grep 'server_espcn_gpu'
+ 1658  ls
+ 1659  ls Git
+ 1660  cat nvcc.txt
+ 1661  cat PyNvCodec.txt
+ 1662  ls Nvidia_VPF
+ 1663  cd ESPCN-PyTorch/
+ 1664  ls
+ 1665  cd ..
+ 1666  ls
+ 1667  cat load_vpf_env_variables.sh
+ 1668  cd ~/Git/VideoProcessingFramework/install/bin
+ 1669  ls
+ 1670  ls -la
+ 1671  cd ~
+ 1672  ls
+ 1673  . ~/load_vpf_env_variables.sh
+ 1674  history
+ 1675  conda activate vpf2
+ 1676  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG_downscaled.h264 file_example_MP4_480_1_5MG_downscaled_out.h264 2
+ 1677  conda env export > vpf2_environment.yml
+ 1678  more vpf2_environment.yml
+ 1679  nano vpf2_environment.yml
+ 1680  conda env create -f vpf2_environment.yml
+ 1681  conda env list
+ 1682  conda deactivate
+ 1683  conda activate vpf2_aiortc2
+ 1684  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG_downscaled.h264 file_example_MP4_480_1_5MG_downscaled_out.h264 2
+ 1685  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG_downscaled.h264 file_example_MP4_480_1_5MG_downscaled_out.h264 4
+ 1686  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG_downscaled.h264 file_example_MP4_480_1_5MG_downscaled_out.h264 8
+ 1687  ls
+ 1688  more test_video_onlygpu.py
+ 1689  ls
+ 1690  . ~/load_vpf_env_variables.sh
+ 1691  cd ~
+ 1692  ls
+ 1693  cd aiortc
+ 1694  ls
+ 1695  cd examples/server/
+ 1696  ls
+ 1697  conda env list
+ 1698  conda activate vpf2_aiortc2
+ 1699  python --version
+ 1700  cd ../..
+ 1701  which pip
+ 1702  /home/gpuadmin/anaconda3/envs/vpf2_aiortc2/bin/pip install aiortc
+ 1703  /home/gpuadmin/anaconda3/envs/vpf2_aiortc2/bin/pip install aiohttp
+ 1704  /home/gpuadmin/anaconda3/envs/vpf2_aiortc2/bin/pip install torch torchvision scipy pillow
+ 1705  cd examples/server/
+ 1706  ls
+ 1707  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1708  ls
+ 1709  nano server_espcn_gpu_vpf.py
+ 1710  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1711  /home/gpuadmin/anaconda3/envs/vpf2_aiortc2/bin/pip install opencv-python
+ 1712  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1713  ls
+ 1714  lspwd
+ 1715  pwd
+ 1716  cd /home/gpuadmin/Git/VideoProcessingFramework/install/bin
+ 1717  ls
+ 1718  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1719  cp /home/gpuadmin/aiortc/examples/server/index.html .
+ 1720  cp /home/gpuadmin/aiortc/examples/server/client.js .
+ 1721  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1722  cp /home/gpuadmin/aiortc/examples/server/demo-instruct.wav .
+ 1723  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1724  ls
+ 1725  nano server_espcn_gpu_vpf.py
+ 1726  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1727  nano server_espcn_gpu_vpf.py
+ 1728  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1729  nano server_espcn_gpu_vpf.py
+ 1730  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1731  nano server_espcn_gpu_vpf.py
+ 1732  ls
+ 1733  . ~/load_vpf_env_variables.sh
+ 1734  ls
+ 1735  more test_video_onlygpu.py
+ 1736  sudo apt update
+ 1737  sudo apt upgrade
+ 1738  exit
+ 1739  ls
+ 1740  . ~/load_vpf_env_variables.sh
+ 1741  ls
+ 1742  conda env list
+ 1743  conda activate vpf2
+ 1744  cd ~
+ 1745  ls
+ 1746  cd ESPCN-PyTorch/
+ 1747  ls
+ 1748  cd ..
+ 1749  ls
+ 1750  cd aiortc
+ 1751  ls
+ 1752  cd examples/server/
+ 1753  ls
+ 1754  conda deactivate
+ 1755  conda env list
+ 1756  conda activate aiortc2
+ 1757  ls
+ 1758  nano server_espcn_gpu.py
+ 1759  ls
+ 1760  . ~/load_vpf_env_variables.sh
+ 1761  ls
+ 1762  nano test_video_onlygpu.py
+ 1763  conda env list
+ 1764  conda activate vpf2
+ 1765  ls
+ 1766  history | grep 'onlygpu'
+ 1767  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG_downscaled.h264 file_example_MP4_480_1_5MG_downscaled_out.h264 2
+ 1768  nano test_video_onlygpu.py
+ 1769  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG_downscaled.h264 file_example_MP4_480_1_5MG_downscaled_out.h264 2
+ 1770  nano test_video_onlygpu.py
+ 1771  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG_downscaled.h264 file_example_MP4_480_1_5MG_downscaled_out.h264 2
+ 1772  nano test_video_onlygpu.py
+ 1773  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG_downscaled.h264 file_example_MP4_480_1_5MG_downscaled_out.h264 2
+ 1774  nano test_video_onlygpu.py
+ 1775  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG_downscaled.h264 file_example_MP4_480_1_5MG_downscaled_out.h264 2
+ 1776  nano test_video_onlygpu.py
+ 1777  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG_downscaled.h264 file_example_MP4_480_1_5MG_downscaled_out.h264 2
+ 1778  nano test_video_onlygpu.py
+ 1779  . ~/load_vpf_env_variables.sh
+ 1780  conda activate vpf2_aiortc2
+ 1781  nano server_espcn_gpu_vpf.py
+ 1782  ls
+ 1783  history | grep 'server_espcn_gpu_vpf.py'
+ 1784  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1785  nano server_espcn_gpu_vpf.py
+ 1786  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1787  nano server_espcn_gpu_vpf.py
+ 1788  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1789  nano server_espcn_gpu_vpf.py
+ 1790  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1791  nano server_espcn_gpu_vpf.py
+ 1792  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1793  nano server_espcn_gpu_vpf.py
+ 1794  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1795  nano server_espcn_gpu_vpf.py
+ 1796  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1797  nano server_espcn_gpu_vpf.py
+ 1798  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1799  nano server_espcn_gpu_vpf.py
+ 1800  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1801  nano server_espcn_gpu_vpf.py
+ 1802  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1803  nano server_espcn_gpu_vpf.py
+ 1804  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1805  ls
+ 1806  cd aiortc
+ 1807  ls
+ 1808  cd examples/server/
+ 1809  ls
+ 1810  conda env list
+ 1811  conda activate aiortc2
+ 1812  ls
+ 1813  nano server_espcn_gpu.py
+ 1814  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1815  nano server_espcn_gpu.py
+ 1816  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1817  nano server_espcn_gpu.py
+ 1818  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1819  nano server_espcn_gpu.py
+ 1820  ls
+ 1821  . ~/load_vpf_env_variables.sh
+ 1822  conda env list
+ 1823  conda activate vpf2_aiortc2
+ 1824  ls
+ 1825  nano server_espcn_gpu_vpf.py
+ 1826  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1827  nano server_espcn_gpu_vpf.py
+ 1828  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1829  nano server_espcn_gpu_vpf.py
+ 1830  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1831  nano server_espcn_gpu_vpf.py
+ 1832  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1833  nano server_espcn_gpu_vpf.py
+ 1834  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1835  nano server_espcn_gpu_vpf.py
+ 1836  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1837  nano server_espcn_gpu_vpf.py
+ 1838  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1839  nano server_espcn_gpu_vpf.py
+ 1840  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1841  nano server_espcn_gpu_vpf.py
+ 1842  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1843  nano server_espcn_gpu_vpf.py
+ 1844  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1845  ls
+ 1846  cp server_espcn_gpu_vpf.py server_espcn_gpu_vpf_bck.py
+ 1847  nano server_espcn_gpu_vpf.py
+ 1848  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1849  nano server_espcn_gpu_vpf.py
+ 1850  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1851  nano server_espcn_gpu_vpf.py
+ 1852  ls
+ 1853  nano index.html
+ 1854  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1855  cd aiortc
+ 1856  ls
+ 1857  conda activate aiortc2
+ 1858  cd examples/server/
+ 1859  ls
+ 1860  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1861  ls
+ 1862  nano server_espcn_gpu.py
+ 1863  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1864  nvidia-smi -l 2
+ 1865  top
+ 1866  nano server_espcn_gpu.py
+ 1867  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1868  nano server_espcn_gpu.py
+ 1869  ls
+ 1870  cp server_espcn_gpu.py server_espcn_gpu_bck.py
+ 1871  nano server_espcn_gpu.py
+ 1872  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1873  ls
+ 1874  nano index.html
+ 1875  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1876  ls
+ 1877  . ~/load_vpf_env_variables.sh
+ 1878  conda activate vpf2
+ 1879  ls
+ 1880  nano test_video_onlygpu.py
+ 1881  ls
+ 1882  history | grep 'onlygpu'
+ 1883  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG_downscaled.h264 file_example_MP4_480_1_5MG_downscaled_out.h264 2
+ 1884  ls
+ 1885  cd aiortc
+ 1886  ls
+ 1887  cd examples/server/
+ 1888  ls
+ 1889  conda env list
+ 1890  conda activate aiortc2
+ 1891  history | grep 'gpu'
+ 1892  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1893  conda deactivate
+ 1894  cd ~
+ 1895  ls
+ 1896  more load_vpf_env_variables.sh
+ 1897  . ~/load_vpf_env_variables.sh
+ 1898  ls
+ 1899  conda env list
+ 1900  conda activate vpf2_aiortc2
+ 1901  ls
+ 1902  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1903  conda env list
+ 1904  which python
+ 1905  nvidia-smi -l 2
+ 1906  top
+ 1907  nvidia-smi -l 2
+ 1908  cd ~
+ 1909  ls
+ 1910  cd aiortc
+ 1911  ls
+ 1912  cd examples/server/
+ 1913  ls
+ 1914  cat server_espcn_gpu.py
+ 1915  ls
+ 1916  cd ~
+ 1917  ls
+ 1918  cd ESPCN-PyTorch/
+ 1919  ls
+ 1920  ls -la
+ 1921  cat test_video_cpu5.py
+ 1922  nvidia-smi -l 2
+ 1923  nvidia-smi -l 0.5
+ 1924  nvidia-smi -l 1
+ 1925  nvtop
+ 1926  sudo apt install nvtop
+ 1927  nvidia-smi -i 0 -q -d MEMORY,UTILIZATION,POWER,CLOCK,COMPUTE
+ 1928  nvidia-smi -i 0 -q -d MEMORY,UTILIZATION,POWER,CLOCK,COMPUTE - l 1
+ 1929  nvidia-smi -i 0 -q -d MEMORY,UTILIZATION,POWER,CLOCK,COMPUTE -l 1
+ 1930  nvidia-smi -l 2
+ 1931  top
+ 1932  nvidia-smi -l 2
+ 1933  ls
+ 1934  . ~/load_vpf_env_variables.sh 
+ 1935  conda activate vpf2_aiortc2
+ 1936  ls
+ 1937  ls -la
+ 1938  python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 1939  ls
+ 1940  cat server_espcn_gpu_vpf.py
+ 1941  ls -la
+ 1942  ffprobe big_buck_bunny_1080p_h264_out.mp4 
+ 1943  ffprobe big_buck_bunny_1080p_h264_out.mp4 -show_streams
+ 1944  ls -la
+ 1945  cat test_video_onlygpu.py
+ 1946  conda deactivate
+ 1947  conda env list
+ 1948  conda activate vpf2
+ 1949  ls -la
+ 1950  history | grep 'onlygpu'
+ 1951  ls -la
+ 1952  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG.mp4 file_example_MP4_480_1_5MG_out.h264 8
+ 1953  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG.mp4 file_example_MP4_480_1_5MG_out.h264 4
+ 1954  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG.mp4 file_example_MP4_480_1_5MG_out.h264 2
+ 1955  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG.mp4 file_example_MP4_480_1_5MG_out.h264 4
+ 1956  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG.mp4 file_example_MP4_480_1_5MG_out.h264 8
+ 1957  python test_video_onlygpu.py data/file_example_MP4_480_1_5MG.mp4 file_example_MP4_480_1_5MG_out.h264 4
+ 1958  ls
+ 1959  cd aiortc
+ 1960  ls
+ 1961  cd examples/server/
+ 1962  ls
+ 1963  history | grep 'certbot'
+ 1964  certbot certificates
+ 1965  history | grep '*.pem'
+ 1966  cd ../../..
+ 1967  ls
+ 1968  cd ESPCN-PyTorch/
+ 1969  ls
+ 1970  cat VM_commands_history_23Jul21.txt | grep 'certbot'
+ 1971  sudo certbot certificates
+ 1972  conda env list
+ 1973  conda activate espcn
+ 1974  certbot certificates
+ 1975  sudo certbot certificates
+ 1976  sudo -i
+ 1977  whereis certbot
+ 1978  which sertbot
+ 1979  which certbot
+ 1980  sudo $(which certbot) certificates
+ 1981  sudo $(which certbot) renew
+ 1982  sudo more /var/log/letsencrypt/letsencrypt.log
+ 1983  ls -la
+ 1984  sudo $(which certbot) certificates
+ 1985  sudo $(which certbot) delete
+ 1986  sudo $(which certbot) certificates
+ 1987  sudo $(which certbot) renew
+ 1988  ls -la /etc/letsencrypt/live/video-sr.cs.aalto.fi/
+ 1989  sudo ls -la /etc/letsencrypt/live/video-sr.cs.aalto.fi/
+ 1990  ls -la
+ 1991  ls
+ 1992  cd aiortc
+ 1993  ls
+ 1994  cd examples/server/
+ 1995  ls
+ 1996  history | grep 'server'
+ 1997  conda env list
+ 1998  conda activate aiortc2
+ 1999  ls -la
+ 2000  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 2001  ls
+ 2002  cd aiortc
+ 2003  ls
+ 2004  cd examples/server/ls
+ 2005  cd examples/server/
+ 2006  ls
+ 2007  conda env list
+ 2008  conda activate aiortc2
+ 2009  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 2010  certbot
+ 2011  ls
+ 2012  ls -la
+ 2013  history | grep certbot
+ 2014  whereis certbot
+ 2015  sudo apt  install certbot
+ 2016  history | grep certbot
+ 2017  sudo certbot certificates
+ 2018  whereis certbot
+ 2019  which certbot
+ 2020  sudo $(which certbot) renew
+ 2021  ls
+ 2022  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+ 2023  ls -la
+ 2024  ls /etc/letsencrypt/
+ 2025  ls /etc/letsencrypt/live
+ 2026  sudo ls /etc/letsencrypt/live
+ 2027  sudo ls -la/etc/letsencrypt/live
+ 2028  sudo ls -la /etc/letsencrypt/live
+ 2029  sudo ls -la /etc/letsencrypt/live/video-sr.cs.aalto.fi
+ 2030  history | grep certbot
+ 2031  ls
+ 2032  history > history_04Nov21.txt

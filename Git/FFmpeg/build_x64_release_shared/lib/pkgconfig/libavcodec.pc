@@ -1,0 +1,14 @@
+prefix=/home/gpuadmin/Git/FFmpeg/build_x64_release_shared
+exec_prefix=${prefix}
+libdir=/home/gpuadmin/Git/FFmpeg/build_x64_release_shared/lib
+includedir=/home/gpuadmin/Git/FFmpeg/build_x64_release_shared/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 59.7.100
+Requires: 
+Requires.private: libswresample >= 4.0.100, libavutil >= 57.4.101
+Conflicts:
+Libs: -L${libdir}  -lavcodec 
+Libs.private: -pthread -lm
+Cflags: -I${includedir}

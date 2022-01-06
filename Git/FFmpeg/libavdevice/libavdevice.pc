@@ -1,0 +1,14 @@
+prefix=/home/gpuadmin/Git/FFmpeg/build_x64_release_shared
+exec_prefix=${prefix}
+libdir=/home/gpuadmin/Git/FFmpeg/build_x64_release_shared/lib
+includedir=/home/gpuadmin/Git/FFmpeg/build_x64_release_shared/include
+
+Name: libavdevice
+Description: FFmpeg device handling library
+Version: 59.0.101
+Requires: 
+Requires.private: libavfilter >= 8.7.101, libswscale >= 6.0.100, libavformat >= 59.5.100, libavcodec >= 59.7.100, libswresample >= 4.0.100, libavutil >= 57.4.101
+Conflicts:
+Libs: -L${libdir}  -lavdevice 
+Libs.private: -lm -lxcb -lxcb-shape -lxcb-xfixes
+Cflags: -I${includedir}

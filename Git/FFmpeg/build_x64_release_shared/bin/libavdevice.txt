@@ -1,0 +1,4 @@
+/home/gpuadmin/Git/FFmpeg/libavdevice/libavdevice.so.59
+/home/gpuadmin/Git/FFmpeg/build_x64_release_shared/lib/libavdevice.so.59
+/home/gpuadmin/Nvidia_VPF/FFmpeg/libavdevice/libavdevice.so.59
+/home/gpuadmin/Nvidia_VPF/FFmpeg/build_x64_release_shared/lib/libavdevice.so.59

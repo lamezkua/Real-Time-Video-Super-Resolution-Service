@@ -1,0 +1,53 @@
+name: vpf2_aiortc2
+channels:
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1=main
+  - _openmp_mutex=4.5=1_gnu
+  - ca-certificates=2021.7.5=h06a4308_1
+  - certifi=2021.5.30=py36h06a4308_0
+  - ld_impl_linux-64=2.35.1=h7274673_9
+  - libffi=3.3=he6710b0_2
+  - libgcc-ng=9.3.0=h5101ec6_17
+  - libgomp=9.3.0=h5101ec6_17
+  - libstdcxx-ng=9.3.0=hd4cf53a_17
+  - ncurses=6.2=he6710b0_1
+  - openssl=1.1.1l=h7f8727e_0
+  - pip=21.0.1=py36h06a4308_0
+  - python=3.6.13=h12debd9_1
+  - readline=8.1=h27cfd23_0
+  - setuptools=52.0.0=py36h06a4308_0
+  - sqlite=3.36.0=hc218d9a_0
+  - tk=8.6.10=hbc83047_0
+  - wheel=0.37.0=pyhd3eb1b0_0
+  - xz=5.2.5=h7b6447c_0
+  - zlib=1.2.11=h7b6447c_3
+  - pip:
+    - aiohttp==3.7.4.post0
+    - aioice==0.7.5
+    - aiortc==1.2.1
+    - async-timeout==3.0.1
+    - attrs==21.2.0
+    - av==8.0.3
+    - cffi==1.14.6
+    - chardet==4.0.0
+    - cryptography==3.4.8
+    - dataclasses==0.8
+    - dnspython==2.1.0
+    - google-crc32c==1.2.0
+    - idna==3.2
+    - idna-ssl==1.1.0
+    - multidict==5.1.0
+    - netifaces==0.11.0
+    - numpy==1.19.5
+    - opencv-python==4.5.3.56
+    - pillow==8.3.2
+    - pycparser==2.20
+    - pyee==8.2.2
+    - pylibsrtp==0.6.8
+    - scipy==1.5.4
+    - torch==1.9.0
+    - torchvision==0.10.0
+    - typing-extensions==3.10.0.2
+    - yarl==1.6.3
+prefix: /home/gpuadmin/anaconda3/envs/vpf2_aiortc2

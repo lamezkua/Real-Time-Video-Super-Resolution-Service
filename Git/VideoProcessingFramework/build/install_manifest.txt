@@ -1,0 +1,13 @@
+/home/gpuadmin/Git/VideoProcessingFramework/install/bin/libTC_CORE.so
+/home/gpuadmin/Git/VideoProcessingFramework/install/bin/libTC.so
+/home/gpuadmin/Git/VideoProcessingFramework/install/bin/PyNvCodec.cpython-36m-x86_64-linux-gnu.so
+/home/gpuadmin/Git/VideoProcessingFramework/install/bin/SampleDecode.py
+/home/gpuadmin/Git/VideoProcessingFramework/install/bin/SampleEncode.py
+/home/gpuadmin/Git/VideoProcessingFramework/install/bin/SampleDecodeSw.py
+/home/gpuadmin/Git/VideoProcessingFramework/install/bin/SampleDecodeMultiThread.py
+/home/gpuadmin/Git/VideoProcessingFramework/install/bin/SampleEncodeMultiThread.py
+/home/gpuadmin/Git/VideoProcessingFramework/install/bin/SampleDemuxDecode.py
+/home/gpuadmin/Git/VideoProcessingFramework/install/bin/SamplePyTorch.py
+/home/gpuadmin/Git/VideoProcessingFramework/install/bin/SampleTensorRTResnet.py
+/home/gpuadmin/Git/VideoProcessingFramework/install/bin/SampleTorchResnet.py
+/home/gpuadmin/Git/VideoProcessingFramework/install/bin/Tests.py

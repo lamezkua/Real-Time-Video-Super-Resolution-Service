@@ -1,0 +1,697 @@
+    1  mkdir t
+    2  cd t
+    3  wget https://developer.download.nvidia.com/compute/cuda/11.4.0/local_installers/cuda_11.4.0_470.42.01_linux.run
+    4  sudo sh cuda_11.4.0_470.42.01_linux.run
+    5  nano /var/log/cuda-installer.log 
+    6  sudo apt update
+    7  sudo apt install build-essential
+    8  sudo sh cuda_11.4.0_470.42.01_linux.run
+    9  export PATH=/usr/local/cuda-11.4/bin:/usr/local/cuda-11.4/NsightCompute-2019.1${PATH:+:${PATH}}
+   10  export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+   11  export LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64\ ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+   12  git clone https://github.com/ekondis/mixbench.git
+   13  cd mixbench/
+   14  ls
+   15  mkdir build
+   16  cd build
+   17  cmake ../mixbench-cuda
+   18  sudo apt install cmake
+   19  cmake ../mixbench-cuda
+   20  ls
+   21  make
+   22  ls
+   23  ./mixbench-cuda-alt
+   24  ls
+   25  cd ..
+   26  ls
+   27  cd results/
+   28  ls
+   29  cd CUDA/
+   30  ls
+   31  nano ro_GTX-1060_d375.26.log 
+   32  nano alt_Tesla-V100.log
+   33  cd l
+   34  ls
+   35  cd ..
+   36  ls
+   37  cd gpuadmin/
+   38  ls
+   39  cd t
+   40  ls
+   41  cd ..
+   42  ls
+   43  mv * /tmp
+   44  ls
+   45  nvidia-ami
+   46  nvidia-smi
+   47  cd /tmp
+   48  ls
+   49  mkdir bench
+   50  mv NVIDIA_CUDA-11.4_Samples/ bench
+   51  mv t bench/
+   52  ls
+   53  cd..
+   54  cd ..
+   55  ls
+   56  pwd
+   57  mkdir espcn
+   58  cd espcn/
+   59  ls
+   60  sudo apt-get update
+   61  sudo apt-get install curl
+   62  cd /tmp
+   63  curl –O https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
+   64  ls
+   65  ls -la
+   66  curl -o https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
+   67  curl -O https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
+   68  ls -la
+   69  bash Anaconda3-2021.05-Linux-x86_64.sh 
+   70  conda update conda
+   71  source ~/.bashrc
+   72  conda info
+   73  conda update conda
+   74  conda update anaconda
+   75  cd $HOME
+   76  ls
+   77  c espcn/
+   78  cd espcn
+   79  ls
+   80  cd ..
+   81  rm espcn/
+   82  rm -r espcn/
+   83  ls
+   84  git clone https://github.com/Lornatang/ESPCN-PyTorch.git
+   85  ls
+   86  cd ESPCN-PyTorch/
+   87  ls
+   88  python --version
+   89  conda create --name espcn
+   90  conda activate espcn
+   91  pwd
+   92  ls
+   93  pip install -r requirements.txt
+   94  sudo apt install python-pip
+   95  ls -la
+   96  pip install -r requirements.txt
+   97  python --version
+   98  conda search opencv-python
+   99  conda search python
+  100  ls
+  101  more requirements.txt 
+  102  conda install -c fastai opencv-python-headless
+  103  pip install -r requirements.txt
+  104  ls -la
+  105  cd weights/
+  106  bash download_weights.sh
+  107  ls
+  108  cd ..
+  109  cd data
+  110  ls
+  111  bash download_dataset.sh
+  112  ls
+  113  conda install unzip
+  114  bash download_dataset.sh
+  115  ls
+  116  ls -la DIV2K/
+  117  ls -la DIV2K/train/
+  118  ls -la DIV2K/train/|wc -l
+  119  ls -la DIV2K/
+  120  ls -la DIV2K/val/
+  121  ls -la DIV2K/val/|wc -l
+  122  ls
+  123  cd ..
+  124  ls
+  125  python test.py --dataroot ./data/Set5 --scale-factor 4 --weights ./weights/espcn_4x.pth --cuda
+  126  ls -la
+  127  ls assets/
+  128  python test_image.py --file ./assets/baby.png --scale-factor 4 ---weights ./weights/espcn_4x.pth -cuda
+  129  python test_image.py --file ./assets/baby.png --scale-factor 4 --weights ./weights/espcn_4x.pth --cuda
+  130  ls -la
+  131  open espcn_4x.png
+  132  nvidia-smi
+  133  ls
+  134  curl --help
+  135  ls
+  136  exit
+  137  ls
+  138  cd ESPCN-PyTorch/
+  139  ls
+  140  conda env list
+  141  conda activate espcn
+  142  ls
+  143  open espcn_4x.png
+  144  man open
+  145  eog
+  146  sudo apt  install eog
+  147  ls
+  148  eog espcn_4x.png 
+  149  man eog
+  150  echo $DISPLAY
+  151  xhost +localhost
+  152  sudo apt install x11-xserver-utils
+  153  xhost +localhost
+  154  more /etc/ssh/sshd_config
+  155  xhost +
+  156  man ifconfig
+  157  ifconfig -a
+  158  export DISPLAY='192.168.10.79:0.0'
+  159  eog espcn_4x.png 
+  160  echo $DISPLAY
+  161  man eog
+  162  eog --display= 192.168.10.79:0.0 espcn_4x.png 
+  163  eog --display= 192.168.10.79:0.0 ./espcn_4x.png 
+  164  eog --display=192.168.10.79:0.0 ./espcn_4x.png 
+  165  eog --display= 192.168.10.79:0.0 espcn_4x.png 
+  166  eog --display=192.168.10.79:0.0 espcn_4x.png 
+  167  ls
+  168  ls data/
+  169  ls
+  170  cd ESPCN-PyTorch/
+  171  conda activate espcn
+  172  cd data
+  173  ls
+  174  scp
+  175  scp amezcul1@triton.aalto.fi:/scratch/work/amezcul1/Thesis/ESPCN-PyTorch/data/*.mp4 .
+  176  pwd
+  177  scp luis_amezcua@192.168.10.79:/Users/luis_amezcua/Downloads/v_*.mp4 .
+  178  pwd
+  179  ls
+  180  cd ..
+  181  python test_video.py --file ./data/v_Rafting_g06_c04.mp4 --scale-factor 4 --weights ./weights/espcn_4x.pth --view --cuda
+  182  ls
+  183  ls -la
+  184  rm *.mp4
+  185  ls -la
+  186  pwd
+  187  python test_video.py --file ./data/v_SoccerJuggling_g07_c05.mp4 --scale-factor 4 --weights ./weights/espcn_4x.pth --view --cuda
+  188  ls -la
+  189  rm *.mp4
+  190  ls -la
+  191  ls
+  192  cd ESPCN-PyTorch/
+  193  ls
+  194  conda env list
+  195  conda env remove --name espcn
+  196  conda create --name espcn python=3.8
+  197  pwd
+  198  ls
+  199  cd ESPCN-PyTorch/
+  200  ls
+  201  conda env list
+  202  conda activate espcn_
+  203  conda activate espcn
+  204  ls
+  205  pip install -r requirements.txt
+  206  ls weights/
+  207  python test_video.py --file ./data/1.mp4 --scale-factor 4 --weights ./weights/espcn_4x.pth --view --cuda
+  208  ls -la
+  209  ls ./data
+  210  python test_video.py --file ./data/v_Rafting_g06_c04.mp4 --scale-factor 4 --weights ./weights/espcn_4x.pth --view --cuda
+  211  python test_video.py --file ./data/v_Rafting_g06_c04.mp4 --scale-factor 4 --weights ./weights/espcn_4x.pth --cuda
+  212  ls -la
+  213  ls
+  214  pwd
+  215  ls -la
+  216  pwd
+  217  cd ..
+  218  ls
+  219  git clone https://github.com/aiortc/aiortc.git
+  220  ls
+  221  cd aiortc/
+  222  ls
+  223  cd examples/
+  224  ls
+  225  cd ..
+  226  ls
+  227  which pip
+  228  /home/gpuadmin/anaconda3/envs/espcn/bin/pip install aiortc
+  229  /home/gpuadmin/anaconda3/envs/espcn/bin/pip install aiohttp
+  230  python server.py
+  231  ls
+  232  cd examples/
+  233  ls
+  234  cd server/
+  235  ls
+  236  python server.py
+  237  pwd
+  238  ls
+  239  python server.py
+  240  python server.py -v
+  241  ls
+  242  nano server_espcn.py
+  243  mv server_espcn.py server_espcn_gpu.py
+  244  ls -la
+  245  pwd
+  246  cd ..
+  247  ls
+  248  cd ESPCN-PyTorch/
+  249  ls
+  250  pwd
+  251  cd ..
+  252  ls
+  253  cd aiortc/
+  254  ls
+  255  cd examples/
+  256  cd server/
+  257  ls
+  258  mkdir espcn_pytorch
+  259  mkdir weights
+  260  ls
+  261  pwd
+  262  cd ../../..
+  263  cd ESPCN-PyTorch/
+  264  ls
+  265  cp espcn_pytorch/*.* ../aiortc/examples/server/espcn_pytorch
+  266  cp weights/*.* ../aiortc/examples/server/weights
+  267  cd ..
+  268  ls
+  269  cd aiortc
+  270  ls
+  271  cd examples/
+  272  ls
+  273  cd server/
+  274  ls
+  275  ls -la ./espcn_pytorch/
+  276  ls -la ./weights/
+  277  ls
+  278  python server.py -v
+  279  logout
+  280  ls
+  281  cd aiortc/
+  282  ls
+  283  cd examples/
+  284  cd server/
+  285  ls
+  286  conda activate espcn
+  287  ls
+  288  python server.py -v
+  289  hostname
+  290  man hostname
+  291  hostname -d
+  292  hostname
+  293  ls
+  294  cd aiortc/
+  295  conda env list
+  296  conda activate espcn
+  297  ls
+  298  cd ESPCN-PyTorch/
+  299  ls
+  300  conda env list
+  301  conda activate espcn
+  302  ls data
+  303  python test_video.py --file ./data/v_VolleyballSpiking_g07_c04.mp4 --scale-factor 8 --weights ./weights/espcn_8x.pth --view --cuda
+  304  python test_video.py --file ./data/v_VolleyballSpiking_g07_c04.mp4 --scale-factor 8 --weights ./weights/espcn_8x.pth --view
+  305  ls -la
+  306  python test_video.py --file ./data/v_VolleyballSpiking_g07_c04.mp4 --scale-factor 8 --weights ./weights/espcn_8x.pth
+  307  ls -la
+  308  pwd
+  309  cd ..
+  310  ls
+  311  cd aiortc/
+  312  ls
+  313  cd examples/
+  314  cd server/
+  315  ls
+  316  python server.py
+  317  cd ..
+  318  ls
+  319  cd ..
+  320  ls
+  321  cd ..
+  322  ls
+  323  cd ESPCN-PyTorch/
+  324  ls
+  325  ls -la
+  326  cd l
+  327  ls
+  328  wget https://developer.download.nvidia.com/compute/cuda/11.4.0/local_installers/cuda_11.4.0_470.42.01_linux.run
+  329  sudo sh cuda_11.4.0_470.42.01_linux.run
+  330  cd /tmp
+  331  ls
+  332  df
+  333  htop
+  334  nvidia-smi
+  335  sudo lshw -numeric -C display
+  336  sudo nvidia-smi
+  337  exit
+  338  nvidia-smi
+  339  ls
+  340  cd ESPCN-PyTorch/
+  341  ls
+  342  conda activate espcn
+  343  ls data
+  344  python test_video.py --file ./data/v_BaseballPitch_g06_c03.mp4 --scale-factor 3 --weights ./weights/espcn_3x.pth --cuda
+  345  ls -la
+  346  ls
+  347  cd aiortc/
+  348  ls
+  349  conda activate espcn
+  350  cd examples/
+  351  cd server/
+  352  ls
+  353  python server.py
+  354  cd ..
+  355  ls
+  356  cd ..
+  357  ls
+  358  cd ESPCN-PyTorch/
+  359  ls
+  360  python test_video.py --file ./data/v_BaseballPitch_g06_c03.mp4 --scale-factor 3 --weights ./weights/espcn_3x.pth --view --cuda
+  361  ls
+  362  cd aiortc/
+  363  ls
+  364  cd examples/
+  365  cd server/
+  366  ls
+  367  conda activate espcn
+  368  python server.py
+  369  type pip
+  370  /home/gpuadmin/anaconda3/envs/espcn/bin/pip install certbot
+  371  certbot certonly --standalone --help
+  372  certbot certonly --standalone -d 168.63.53.178:8080
+  373  sudo certbot certonly --standalone -d 168.63.53.178:8080
+  374  sudo $(which certbot) certonly --standalone -d 168.63.53.178:8080
+  375  sudo $(which certbot) certonly --standalone -d video-sr.tmp.zgib.net:8080
+  376  sudo $(which certbot) certonly --standalone -d video-sr.tmp.zgib.net
+  377  stat /etc/letsencrypt/live/video-sr.tmp.zgib.net/fullchain.pem
+  378  sudo cp /etc/letsencrypt/live/video-sr.tmp.zgib.net/fullchain.pem .
+  379  sudo cp /etc/letsencrypt/live/video-sr.tmp.zgib.net/privkey.pem .
+  380  ls -l
+  381  chown gpuadmin *.pem
+  382  sudo chown gpuadmin *.pem
+  383  python server.py -h
+  384  python server.py --cert-file=fullchain.pem --key-file=privkey.pem 
+  385  python server.py --cert-file=fullchain.pem --key-file=privkey.pem  -v
+  386  python server.py --cert-file=fullchain.pem --key-file=privkey.pem
+  387  ls
+  388  python server_espcn_gpu.py
+  389  ls
+  390  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+  391  sudo $(which certbot) certonly --standalone -d video-sr.cs.aalto.fi
+  392  sudo cp /etc/letsencrypt/live/video-sr.cs.aalto.fi/{fullchain,privkey}.pem .
+  393  sudo chown gpuadmin *.pem
+  394  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+  395  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+  396  ls -la
+  397  cd ../../..
+  398  ls
+  399  cd ESPCN-PyTorch/
+  400  ls
+  401  ls -la
+  402  ls
+  403  cd ..
+  404  ls
+  405  ls -la
+  406  type cuda_11.4.0_470.42.01_linux.run
+  407  ls
+  408  cd ESPCN-PyTorch/
+  409  ls -la
+  410  conda activate espcn
+  411  ls -la data
+  412  ls -la
+  413  python test_video.py --file ./data/v_BaseballPitch_g06_c03.mp4 --scale-factor 3 --weights ./weights/espcn_3x.pth --view --cuda
+  414  python test_video.py --file ./data/v_BaseballPitch_g06_c03.mp4 --scale-factor 3 --weights ./weights/espcn_3x.pth --cuda
+  415  ls -la
+  416  ls -la data
+  417  python test_video.py --file ./data/v_SoccerJuggling_g07_c05.mp4 --scale-factor 2 --weights ./weights/espcn_2x.pth --cuda
+  418  ls -la
+  419  history
+  420  history > VM_commands_history_23Jul21.txt
+  421  ls *.txt
+  422  ls
+  423  pwd
+  424  cd aiortc/
+  425  cd examples/
+  426  cd server/
+  427  ls
+  428  mv index.html index.html.old
+  429  mv server_espcn_gpu.py server_espcn_gpu.py.old
+  430  pwd
+  431  ls
+  432  conda env list
+  433  conda activate espcn
+  434  ls -la
+  435  python server_espcn_gpu.py
+  436  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+  437  ls -la
+  438  more server_espcn_gpu.py.old
+  439  more server_espcn_gpu.py
+  440  ls
+  441  nano server_espcn_gpu.py
+  442  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+  443  ls -la
+  444  nano server_espcn_gpu.py
+  445  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+  446  ls
+  447  ls weights
+  448  cd ../..
+  449  cd ..
+  450  ls
+  451  cd ESPCN-PyTorch/
+  452  ls
+  453  ls data
+  454  ls -la data
+  455  ls
+  456  ls data
+  457  python test_video.py --file ./data/v_SoccerJuggling_g07_c05.mp4 --scale-factor 2 --weights ./weights/espcn_2x.pth --cuda
+  458  ls
+  459  ls -la
+  460  python test_video.py --file ./data/v_SoccerJuggling_g07_c05.mp4 --scale-factor 2 --weights ./weights/espcn_2x.pth --cuda
+  461  python test_video.py --file ./data/v_SoccerJuggling_g07_c05.mp4 --scale-factor 3 --weights ./weights/espcn_3x.pth --cuda
+  462  python test_video.py --file ./data/v_SoccerJuggling_g07_c05.mp4 --scale-factor 4 --weights ./weights/espcn_4x.pth --cuda
+  463  python test_video.py --file ./data/v_SoccerJuggling_g07_c05.mp4 --scale-factor 8 --weights ./weights/espcn_8x.pth --cuda
+  464  ls
+  465  cd aiortc/
+  466  ls
+  467  cd examples/
+  468  cd server/
+  469  ls
+  470  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+  471  conda env list
+  472  conda activate espcn
+  473  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+  474  ls
+  475  nvidia-smi
+  476  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+  477  exit
+  478  nvidia-smi
+  479  exit
+  480  ls
+  481  nvidia-smi
+  482  nvidia-smi -l1
+  483  nvidia-smi -l 1
+  484  watch -n 1 nvidia-smi
+  485  nvidia-settings -q GPUUtilization -q useddedicatedgpumemory
+  486  watch -n0.1 "nvidia-settings -q GPUUtilization -q useddedicatedgpumemory"
+  487  nvidia-smi -l 1
+  488  conda activate espcn
+  489  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+  490  ls
+  491  cd aiortc/
+  492  cd examples/
+  493  cd server/
+  494  ls
+  495  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+  496  nvidia-smi
+  497  top
+  498  nvidia-smi
+  499  top
+  500  conda activate espcn
+  501  ls
+  502  cd aiortc/
+  503  cd examples/
+  504  cd server
+  505  ls
+  506  mv index.html index.html.video
+  507  mv index.html.old index.html
+  508  mv server_espcn_gpu.py server_espcn_gpu.py.video
+  509  mv server_espcn_gpu.py.old server_espcn_gpu.py
+  510  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+  511  ls
+  512  ls aiortc/
+  513  ls aiortc/examples/server/
+  514  ls
+  515  mv aiortc aiortc_old
+  516  conda env list
+  517  pwd
+  518  ls
+  519  conda create --name aiortc python=3.8
+  520  pwd
+  521  ls
+  522  git clone https://git.videolan.org/git/ffmpeg/nv-codec-headers.git
+  523  ls
+  524  cd nv-codec-headers/
+  525  ls
+  526  nano Makefile 
+  527  make install
+  528  ls
+  529  cd ..
+  530  git clone https://git.ffmpeg.org/ffmpeg.git
+  531  ls
+  532  cd ffmpeg/
+  533  ls
+  534  git checkout n4.2.2
+  535  conda install nasm
+  536  ls
+  537  ls -la
+  538  ls
+  539  ./configure --prefix=$CONDA_PREFIX --enable-cuda-sdk --enable-cuvid --enable-nvenc --enable-nonfree --enable-libnpp --extra-cflags=-I/usr/local/cuda/include --extra-ldflags=-L/usr/local/cuda/lib64
+  540  conda install nvcc
+  541  which pip
+  542  /home/gpuadmin/anaconda3/bin/pip install nvcc
+  543  ./configure --prefix=$CONDA_PREFIX --enable-cuda-nvcc --enable-cuvid --enable-nvenc --enable-nonfree --enable-libnpp --extra-cflags=-I/usr/local/cuda/include --extra-ldflags=-L/usr/local/cuda/lib64
+  544  echo $CONDA_PREFIX
+  545  ls ..
+  546  nvcc -V
+  547  sudo apt install nvidia-cuda-toolkit
+  548  cd ..
+  549  ls
+  550  ls -la
+  551  ls
+  552  sudo sh cuda_11.4.0_470.42.01_linux.run
+  553  ls
+  554  rm -r ffmpeg/
+  555  rm -rf ffmpeg/
+  556  rm -rf nv-codec-headers/
+  557  ls
+  558  conda env list
+  559  conda activate aiortc
+  560  ls
+  561  git clone https://git.videolan.org/git/ffmpeg/nv-codec-headers.git
+  562  ls
+  563  cd nv-codec-headers/
+  564  ls
+  565  nano Makefile 
+  566  ls -la
+  567  make install
+  568  ls -la
+  569  cd ..
+  570  git clone https://git.ffmpeg.org/ffmpeg.git
+  571  cd ffmpeg/
+  572  ls
+  573  git checkout n4.2.2
+  574  conda install nasm
+  575  ls
+  576  ./configure --prefix=$CONDA_PREFIX --enable-cuda-sdk --enable-cuvid --enable-nvenc --enable-nonfree --enable-libnpp --extra-cflags=-I/usr/local/cuda/include --extra-ldflags=-L/usr/local/cuda/lib64
+  577  nvcc -V
+  578  sudo apt install nvidia-cuda-toolkit
+  579  cd ..
+  580  ls
+  581  rm cuda_11.4.0_470.42.01_linux.run 
+  582  wget https://developer.download.nvidia.com/compute/cuda/11.4.0/local_installers/cuda_11.4.0_470.42.01_linux.run
+  583  sudo sh cuda_11.4.0_470.42.01_linux.run
+  584  ls /tmp
+  585  ls -la /tmp
+  586  quota
+  587  sudo apt install quota
+  588  quota
+  589  man quota
+  590  du /tmp
+  591  du
+  592  df
+  593  ls
+  594  cd ESPCN-PyTorch/
+  595  ls
+  596  rm *.mp4
+  597  df
+  598  du /tmp
+  599  cd /tmp
+  600  ls
+  601  ls -la
+  602  du .ICE-unix/
+  603  du .Test-unix/
+  604  du .X11-unix/
+  605  du .XIM-unix/
+  606  du .font-unix/
+  607  cd $HOME
+  608  ls
+  609  sudo sh cuda_11.4.0_470.42.01_linux.run
+  610  ls
+  611  ls ./anaconda3/
+  612  ls ./anaconda3/pkgs/
+  613  conda clean -p
+  614  df
+  615  ls
+  616  cd ffmpeg/
+  617  ls
+  618  ls -la
+  619  which nvcc
+  620  whereis nvcc
+  621  ls /usr/local/cuda/bin
+  622  ls -la /usr/local/cuda/bin
+  623  export PATH=$PATH:/usr/local/cuda/bin
+  624  ls
+  625  ./configure --prefix=$CONDA_PREFIX --enable-cuda-sdk --enable-cuvid --enable-nvenc --enable-nonfree --enable-libnpp --extra-cflags=-I/usr/local/cuda/include --extra-ldflags=-L/usr/local/cuda/lib64
+  626  ./configure --prefix=$CONDA_PREFIX --enable-cuda-nvcc --enable-cuvid --enable-nvenc --enable-nonfree --enable-libnpp --extra-cflags=-I/usr/local/cuda/include --extra-ldflags=-L/usr/local/cuda/lib64
+  627  ls ../nv-codec-headers/
+  628  cd ..
+  629  cd nv-codec-headers/
+  630  pwd
+  631  export PATH=$PATH:/home/gpuadmin/nv-codec-headers
+  632  cd ..
+  633  cd ffmpeg/
+  634  ls
+  635  ./configure --prefix=$CONDA_PREFIX --enable-cuda-nvcc --enable-cuvid --enable-nvenc --enable-nonfree --enable-libnpp --extra-cflags=-I/usr/local/cuda/include --extra-ldflags=-L/usr/local/cuda/lib64
+  636  ./configure --prefix=$CONDA_PREFIX --enable-cuda-sdk --enable-cuvid --enable-nvenc --enable-nonfree --enable-libnpp --extra-cflags=-I/usr/local/cuda/include --extra-ldflags=-L/usr/local/cuda/lib64
+  637  echo $PKG_CONFIG_PATH
+  638  export PKG_CONFIG_PATH=/home/gpuadmin/nv-codec-headers
+  639  echo $PKG_CONFIG_PATH
+  640  ./configure --prefix=$CONDA_PREFIX --enable-cuda-sdk --enable-cuvid --enable-nvenc --enable-nonfree --enable-libnpp --extra-cflags=-I/usr/local/cuda/include --extra-ldflags=-L/usr/local/cuda/lib64
+  641  ./configure --prefix=$CONDA_PREFIX --enable-cuda-nvcc --enable-cuvid --enable-nvenc --enable-nonfree --enable-libnpp --extra-cflags=-I/usr/local/cuda/include --extra-ldflags=-L/usr/local/cuda/lib64
+  642  ls
+  643  ls -la
+  644  make -j 10
+  645  make install
+  646  cd ..
+  647  ls
+  648  clone https://github.com/aiortc/aiortc.git
+  649  git clone https://github.com/aiortc/aiortc.git
+  650  ls
+  651  cd aiortc
+  652  ls
+  653  apt install libopus-dev libvpx-dev pkg-config
+  654  sudo apt install libopus-dev libvpx-dev pkg-config
+  655  ls
+  656  python setup.py install
+  657  which pip
+  658  /home/gpuadmin/anaconda3/envs/aiortc/bin/pip install aiohttp opencv-python
+  659  ls
+  660  cd examples/
+  661  cd server/
+  662  ls
+  663  ls -la
+  664  pwd
+  665  ls -la
+  666  python server.py --cert-file=fullchain.pem --key-file=privkey.pem
+  667  ls
+  668  ls -la
+  669  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+  670  conda list
+  671  which pip
+  672  /home/gpuadmin/anaconda3/envs/aiortc/bin/pip install torch torchvision pillow sewar tqdm scipy
+  673  ls
+  674  /home/gpuadmin/anaconda3/envs/aiortc/bin/pip install torch torchvision pillow sewar tqdm scipy
+  675  conda list
+  676  ls -la
+  677  mkdir espcn_pytorch
+  678  pwd
+  679  ls -la ./espcn_pytorch/
+  680  mkdir weights
+  681  ls -la ./weights/
+  682  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+  683  ls -la
+  684  mv index.html index.html.orig
+  685  mv server_espcn_gpu.py server_espcn_gpu.py.orig
+  686  pwd
+  687  ls -la
+  688  nano index.html
+  689  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+  690  nano index.html
+  691  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+  692  nano index.html
+  693  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+  694  nano index.html
+  695  python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
+  696  ls -la
+  697  history > VM_commands_history_26Jul21.txt

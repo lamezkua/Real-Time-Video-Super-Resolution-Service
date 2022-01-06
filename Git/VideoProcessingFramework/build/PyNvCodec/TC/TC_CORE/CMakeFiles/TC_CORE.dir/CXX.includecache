@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../PyNvCodec/TC/TC_CORE/inc/TC_CORE.hpp
+Version.hpp
+../PyNvCodec/TC/TC_CORE/inc/Version.hpp
+cstdint
+-
+utility
+-
+
+../PyNvCodec/TC/TC_CORE/inc/Version.hpp
+
+/home/gpuadmin/Git/VideoProcessingFramework/PyNvCodec/TC/TC_CORE/src/Task.cpp
+algorithm
+-
+functional
+-
+vector
+-
+string
+-
+TC_CORE.hpp
+/home/gpuadmin/Git/VideoProcessingFramework/PyNvCodec/TC/TC_CORE/src/TC_CORE.hpp
+
+/home/gpuadmin/Git/VideoProcessingFramework/PyNvCodec/TC/TC_CORE/src/Token.cpp
+TC_CORE.hpp
+/home/gpuadmin/Git/VideoProcessingFramework/PyNvCodec/TC/TC_CORE/src/TC_CORE.hpp
+

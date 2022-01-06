@@ -1,0 +1,16 @@
+aioice<0.8.0,>=0.7.5
+av<9.0.0,>=8.0.0
+cffi>=1.0.0
+cryptography>=2.2
+google-crc32c>=1.1
+pyee>=6.0.0
+pylibsrtp>=0.5.6
+
+[:python_version < "3.7"]
+dataclasses
+
+[dev]
+aiohttp>=3.7.0
+coverage>=5.0
+numpy>=1.19.0
+websockets>=8.0

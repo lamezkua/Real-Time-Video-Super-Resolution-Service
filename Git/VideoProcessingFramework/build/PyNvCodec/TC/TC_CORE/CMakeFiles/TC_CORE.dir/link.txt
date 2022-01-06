@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libTC_CORE.so -o libTC_CORE.so CMakeFiles/TC_CORE.dir/src/Task.cpp.o CMakeFiles/TC_CORE.dir/src/Token.cpp.o  -L/usr/local/cuda/lib64 

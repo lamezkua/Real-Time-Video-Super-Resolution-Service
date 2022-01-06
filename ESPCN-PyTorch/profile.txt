@@ -1,0 +1,45 @@
+          test_video_cpu5_scalene2.py: % of time =  78.43% out of   7.06s.          
+       ╷       ╷       ╷       ╷       ╷                                            
+  Line │Time   │–––––– │–––––– │–––––– │                                            
+       │Python │native │system │GPU    │test_video_cpu5_scalene2.py                 
+╺━━━━━━┿━━━━━━━┿━━━━━━━┿━━━━━━━┿━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸
+   ... │       │       │       │       │                                            
+   109 │    3% │    3% │       │  5%   │        img = Image.fromarray(cv2.cvtColor  
+   ... │       │       │       │       │                                            
+   111 │    6% │    7% │       │  9%   │        img = pil2tensor(y).view(1, -1, y.  
+   ... │       │       │       │       │                                            
+   124 │    4% │    4% │       │  5%   │        cb_img = pil2tensor(cb).view(1, -1  
+   125 │    3% │    3% │       │  5%   │        cr_img = pil2tensor(cr).view(1, -1  
+   126 │    2% │    2% │       │  3%   │        cb_img = interpolate(cb_img, scale  
+   ... │       │       │       │       │                                            
+   128 │    1% │    1% │       │  1%   │        cb_img *= 255.0                     
+   ... │       │       │       │       │                                            
+   133 │    3% │    3% │       │  6%   │        sr_frame_cr = Image.fromarray(cr_i  
+   134 │    5% │    5% │       │  7%   │        sr_frame = Image.merge("YCbCr", [s  
+   ... │       │       │       │       │                                            
+   137 │   11% │   12% │       │ 19%   │        sr_frame = cv2.cvtColor(np.asarray  
+   ... │       │       │       │       │                                            
+   139 │    4% │    2% │   3%  │  7%   │        pipe_w.stdin.write(sr_frame.tostri  
+   ... │       │       │       │       │                                            
+   152 │    2% │    1% │   1%  │  6%   │        raw_frame = pipe_r.stdout.read(fra  
+   ... │       │       │       │       │                                            
+       │       │       │       │       │                                            
+╶──────┼───────┼───────┼───────┼───────┼───────────────────────────────────────────╴
+       │       │       │       │       │function summary for test_video_cpu5_scal…  
+    32 │   48% │   42% │       │ 79%   │main                                        
+       ╵       ╵       ╵       ╵       ╵                                            
+  /home/gpuadmin/ESPCN-PyTorch/espcn_pytorch/model.py: % of time =  21.57% out of   
+                                       7.06s.                                       
+       ╷       ╷       ╷       ╷       ╷                                            
+  Line │Time   │–––––– │–––––– │–––––– │                                            
+       │Python │native │system │GPU    │/home/gpuadmin/ESPCN-PyTorch/espcn_pytorc…  
+╺━━━━━━┿━━━━━━━┿━━━━━━━┿━━━━━━━┿━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸
+   ... │       │       │       │       │                                            
+    40 │   10% │   13% │       │ 15%   │        out = self.feature_maps(inputs)     
+    41 │    4% │    5% │       │  6%   │        out = self.sub_pixel(out)           
+   ... │       │       │       │       │                                            
+       │       │       │       │       │                                            
+╶──────┼───────┼───────┼───────┼───────┼───────────────────────────────────────────╴
+       │       │       │       │       │function summary for /home/gpuadmin/ESPCN…  
+    38 │   15% │   19% │       │ 21%   │ESPCN.forward                               
+       ╵       ╵       ╵       ╵       ╵                                            
