@@ -3,7 +3,7 @@
 ## Introduction
 
 <p align="center">
-    <img src="T_Diagram_3_2_3_1", width="700">
+    <img src="T_Diagram_3_2_3_1.png", width="700">
 </p>
 
 ## Updates
