@@ -49,10 +49,10 @@ python server_espcn_gpu.py --cert-file=fullchain.pem --key-file=privkey.pem
 
 On the client side,
 
-  a. Open a browser window and provide the following Uniform Resource Locator (URL) and port to start the client side 
-   (e.g., https://video-sr.cs.aalto.fi:8080/).
+a. Open a browser window and provide the following Uniform Resource Locator (URL) and port to start the client side 
+   (e.g., `https://video-sr.cs.aalto.fi:8080/`).
 
-  b. Select from the displayed user interface (UI) the desired parameters to start the service.
+b. Select from the displayed user interface (UI) the desired parameters to start the service.
 
 2. GPU code (the default aiortc codec is used)
 
@@ -67,7 +67,7 @@ python server_espcn_gpu_vpf.py --cert-file=fullchain.pem --key-file=privkey.pem
 
 On the client side,
 
-  a. Open a browser window and provide the following Uniform Resource Locator (URL) and port to start the client side 
-   (e.g., https://video-sr.cs.aalto.fi:8080/).
+a. Open a browser window and provide the following Uniform Resource Locator (URL) and port to start the client side 
+   (e.g., `https://video-sr.cs.aalto.fi:8080/`).
 
-  b. Select from the displayed user interface (UI) the desired parameters to start the service.
+b. Select from the displayed user interface (UI) the desired parameters to start the service.
