@@ -16,13 +16,20 @@ Besides finding and defining the code components mentioned before as optimal to 
 
 In future, the quality measure of the video super-resolution done by the ESPCN-model is suggested as a next step to do.
 
+## Reference Guide
+
+Please refer to [REFERENCE_GUIDE.md](./doc/REFERENCE_GUIDE.md) for a description on how to navigate the code.
+
 ## Updates
+
 - [2022-01-06] v0.1 is released.
 
 ## License
+
 The project is release under the [MIT license](./LICENSE).
 
 ## Contact
+
 For any question, feel free to contact
 ```
 AMEZCUA Luis     : luis.amezcua@aalto.fi
